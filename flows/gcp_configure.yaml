@@ -1,0 +1,27 @@
+id: de_homework
+namespace: zoomcamp
+
+tasks:
+  - id: set_gcp_id
+    type: io.kestra.plugin.core.kv.Set
+    key: GCP_PROJECT_ID
+    value: premium-buckeye-484913-s0
+    kvType: STRING
+
+  - id: set_gcp_location
+    type: io.kestra.plugin.core.kv.Set
+    key: GCP_LOCATION
+    value: europe-west2
+    kvType: STRING
+
+  - id: gcp_bucket_name
+    type: io.kestra.plugin.core.kv.Set
+    key: GCP_BUCKET_NAME
+    kvType: STRING
+    value: nomadg_kestra_orchestrator_week2 # TODO make sure it's globally unique!
+
+  - id: set_gcp_dataset
+    type: io.kestra.plugin.core.kv.Set
+    key: GCP_DATASET
+    value: kestra_homework_dataset
+    kvType: STRING

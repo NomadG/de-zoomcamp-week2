@@ -21,10 +21,19 @@ services:
             basicAuth:
               username: "admin@kestra.io"
               password: Admin1234!
+          repository:
+            type: h2
+          queue:
+            type: memory
           storage:
             type: local
             local:
               basePath: "/app/storage"
+          ai:
+            type: gemini
+            gemini:
+              model-name: gemini-2.5-flash
+              api-key: $(GEMINI_API_KEY)
           tasks:
             tmpDir:
               path: /tmp/kestra-wd/tmp
