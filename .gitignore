@@ -1,0 +1,4 @@
+*.json
+*.env_encoded
+.venv/
+venv/
