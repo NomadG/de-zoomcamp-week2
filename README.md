@@ -107,9 +107,7 @@ Add a `timezone` property set to `America/New_York` in the Schedule trigger conf
 * All workflows are implemented using **Kestra**
 * YAML flow definitions are located in the `flows/` directory
 * Data ingestion targets **Google Cloud Storage** and **BigQuery**
+* Dataset ingestion is orchestrated using **ForEach loops** combined with **Subflows** to process multiple taxi types and months
 * Queries were executed on BigQuery after successful pipeline execution
 
 ```
-
----
-
